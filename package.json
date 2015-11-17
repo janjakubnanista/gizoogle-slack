@@ -1,0 +1,35 @@
+{
+  "name": "gizoogle-slack",
+  "version": "0.0.1",
+  "description": "Slack Gizoogle integration",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test test/**/*_test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janjakubnanista/gizoogle-slack.git"
+  },
+  "keywords": [
+    "Gizoogle",
+    "Slack"
+  ],
+  "author": "Ján Jakub Naništa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janjakubnanista/gizoogle-slack/issues"
+  },
+  "homepage": "https://github.com/janjakubnanista/gizoogle-slack#readme",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "gizoogle": "0.0.4",
+    "morgan": "^1.6.1",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "eslint": "^1.9.0"
+  }
+}
