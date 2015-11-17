@@ -21,7 +21,7 @@ app.all('/translate', function(req, res, next) {
     gizoogle.string(text, function(error, translated) {
         if (error) return next(error);
 
-        res.json({ text: '*' + translated + '*' });
+        res.json({ text: translated, response_type: 'in_channel' });
     });
 });
 
