@@ -15,13 +15,13 @@ app.use(morgan('dev'));
 app.all('/translate', function(req, res, next) {
     var text = req.body.text || req.query.text;
     if (!text) {
-        res.json({ text: '' });
+        res.json({ text: 'You sent an empty text' });
     }
 
     gizoogle.string(text, function(error, translated) {
         if (error) return next(error);
 
-        res.json({ text: translated });
+        res.json({ text: translated, response_type: 'in_channel' });
     });
 });
 
